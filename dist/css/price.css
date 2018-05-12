@@ -1,0 +1,121 @@
+.price::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.price h3, .price .result {
+    font-size: 26px;
+}
+
+.price .field {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.price .simulation {
+    float: left;
+    height: 200px;
+    width: 30%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price label{
+    display: inline-block;
+    width: 125px;
+}
+.price input, .price select{
+    width: calc(100% - 125px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff;
+    padding: 2px;
+    outline-color: transparent;
+    box-shadow: 0px 0px 5px black;
+    border-color: transparent;
+    font-size: 15px;
+}
+
+.price .simulation-result {
+    width: 70%;
+    float: left;
+}
+.price .falemais {
+    float: left;
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    padding: 2px 0px 35px 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px #9f9d98;
+}
+
+.price .falemais.better{
+    box-shadow: 1px 1px 10px 1px rgb(35, 230, 0);
+}
+
+.price .falemais.worst{
+    box-shadow: 1px 1px 10px 1px rgb(255, 24, 0);
+}
+
+.price .falemais.better p{
+    color: green;
+}
+
+.price .falemais.worst p{
+    color: red;
+}
+
+.price .discount {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.price .btn-submit {
+    margin-top: 25px;
+}
+
+.price .result {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+    .price .simulation {
+        width: 70%;
+        padding: 0 15% 40px 15%;
+    }
+
+    .price .simulation-result {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .price .simulation {
+        width: 92%;
+        padding: 0 4% 40px 4%;
+    }
+
+    .price .falemais {
+        padding: 2px 0px 35px 0px;
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: none;
+    }
+
+    .price .simulation-result {
+        width: 100%;
+    }
+
+    .price h3, .price .result {
+        font-size: 20px;
+    }
+}

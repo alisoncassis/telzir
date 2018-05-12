@@ -1,0 +1,11 @@
+.footer {
+  background: #00b4c4;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer a {
+  color: #fff;
+  cursor: pointer;
+}

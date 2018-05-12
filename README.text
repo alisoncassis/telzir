@@ -1,0 +1,34 @@
+
+Antes de continuar, eu gostaria de agradecer a oportunidade de participar do processo seletivo da Vizir!
+
+Para este projeto optei por seguir uma arquitetura vinculada a um banco de dados, tendo em mente o crescimento da Telzir
+e também de seu produto FaleMais.
+Caso a empresa cresça e disponibilize novos DDDs, planos ou altere suas taxas, alterando direto no banco de dados o 
+resultado já será refletido para a aplicação, não sendo necessário dessa maneira alterar o código da aplicação ou realizar
+novos deploys.
+
+Utilizei: 
+
+- Node 8.2.1
+- Mlab como banco de dados NoSQL
+- MongoDB driver
+- Nodemailer
+- Babel
+- Gulp
+- Mocha
+
+### How do I get set up? ###
+
+* Dê um git clone desse repositório 
+
+* Crie um arquivo .env na raíz do projeto com o mesmo padrão do .envExample  
+	(Obs.: Você pode utilizar os dados do .envExample para testar a aplicação pois são contas para realizar testes)
+
+* Dê o comando npm install
+
+* Start - npm start
+
+* Test - npm run test
+
+* Build - npm run build
+

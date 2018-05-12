@@ -1,0 +1,50 @@
+.subtitle {
+  color: #00b4c4;
+  font-size: 38px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.section {
+  background: rgba(240, 240, 240, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.section:last-of-type {
+  padding-bottom: 100px;
+}
+
+.btn-submit {
+  background-color: #00b4c4;
+  border-color: transparent;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  outline-color: transparent;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.snackbar {
+  background-color: #333;
+  border-radius: 15px;
+  bottom: 10px;
+  color: #fff;
+  min-width: 250px;
+  opacity: 0;
+  padding: 16px;
+  position: fixed;
+  right: 5%;
+  text-align: center;
+  z-index: 10;
+}
+
+.snackbar.show {
+  bottom: 250px;
+  opacity: 1;
+  transition: bottom 3s, opacity 1s;
+}

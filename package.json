@@ -1,0 +1,43 @@
+{
+  "name": "telzir",
+  "version": "1.0.0",
+  "description": "Uma empresa hipotética de telefonia online",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "es5": "babel src/js/app-es6 -d src/js/app --source-maps",
+    "gulp-default": "gulp default",
+    "start": "node index",
+    "build": "npm run es5 && npm run gulp-default && npm run start",
+    "watch": "babel src/js/app-es6 -d src/js/app --source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisoncassis/telzir.git"
+  },
+  "author": "Alison Cassis",
+  "license": "ISC",
+  "homepage": "https://github.com/alisoncassis/telzir#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "nodemailer": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "mocha": "^3.5.3",
+    "should": "^13.1.0",
+    "supertest": "^3.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+.header {
+  background: rgba(240, 240, 240, 0.97);
+  box-sizing: border-box;
+  padding: 15px 15px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header .logo {
+  float: left;
+  height: 45px;
+  width: 70px;
+}
+
+.header .nav {
+  cursor: pointer;
+  float: right;
+}
+
+.header .nav-link {
+  display: inline;
+  float: left;
+  line-height: 45px;
+  padding-left: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header .nav-link a {
+  color: #00b4c4;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .nav {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.header {
+    padding: 15px 15px 10px 15px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(240, 240, 240, 0.97);
+}
+
+.header .logo {
+    width: 70px;
+    height: 45px;
+    float: left;
+}
+
+.header .nav{
+    float: right;
+    cursor: pointer;
+}
+
+.header .nav-link{
+    float: left;
+    display: inline;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 30px;
+    line-height: 45px;
+}
+.header .nav-link a{
+    color: #00b4c4;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .header .nav {
+        display: none;
+    }
+}

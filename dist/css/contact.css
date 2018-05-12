@@ -1,0 +1,26 @@
+.contact input, .contact textarea {
+    width: 90%;
+    border: none;
+    outline-color: transparent;
+    padding: 10px;
+    margin: 0 0 15px 0px;
+    border-radius: 25px;
+    color: #9f9d98;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact .contact-form {
+    padding: 0px 20%;
+}
+
+.contact .btn-submit {
+    width: calc(100% - 40px);
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact .contact-form {
+        padding: 0;
+    }
+}
